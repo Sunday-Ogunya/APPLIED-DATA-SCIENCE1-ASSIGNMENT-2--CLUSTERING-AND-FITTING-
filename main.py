@@ -8,22 +8,15 @@ def main():
     data = load_data(file_path)
 
     if data is not None:
-        # Generate a scatter plot for Study Hours vs Sleep Quality
         create_scatter_plot(data, 'Study_Hours', 'Sleep_Quality')
-        
-        # Generate a histogram for Sleep Duration
         create_histogram(data, 'Sleep_Duration')
 
-        # Generate a heatmap for correlation analysis
         create_heatmap(data)
 
-        # Generate the elbow plot for clustering
         create_elbow_plot(data)
 
-        # Perform K-Means clustering
         perform_clustering(data)
 
-        # Perform linear regression
         linear_fit(data)
         
     else:
